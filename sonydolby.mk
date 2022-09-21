@@ -12,6 +12,10 @@ DOLBY_PATH := vendor/sony/dolby
 PRODUCT_COPY_FILES += \
     $(DOLBY_PATH)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
 
+# Init
+PRODUCT_PACKAGES += \
+    init.dolby.rc
+
 # LunarisDolby
 PRODUCT_PACKAGES += \
     LunarisDolby
